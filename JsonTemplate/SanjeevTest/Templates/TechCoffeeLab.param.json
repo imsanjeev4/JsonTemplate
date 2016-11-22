@@ -1,0 +1,39 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "StorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "VirtualNetworkName": {
+            "value": "TechCoffeevNet"
+        },
+        "StoAccountName": {
+            "value": "techcoffeevmstorage"
+        },
+        "WebInstanceCount": {
+            "value": 2
+        },
+        "VMWEBName": {
+            "value": "VMWEB"
+        },
+        "VMWEBAdminUserName": {
+            "value": "Romain"
+        },
+        "SQLInstanceCount": {
+            "value": 2
+        },
+        "VMSQLName": {
+            "value": "VMSQL"
+        },
+        "VMSQLAdminUserName": {
+            "value": "Romain"
+        },
+        "WEBTierName": {
+            "value": "WebTier"
+        },
+        "SQLTierName": {
+            "value": "SQLTier"
+        }
+    }
+}
