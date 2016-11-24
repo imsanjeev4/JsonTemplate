@@ -1,0 +1,30 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "existingRecoveryServicesVaultName": {
+      "value": "DevVault03"
+    },
+    "existingProtectionContainers": {
+      "value": [
+        "iaasvmcontainer;iaasvmcontainerv2;vsarmtempdemo;MyWindowsVM",
+        "iaasvmcontainer;iaasvmcontainer;my-classic-vm;my-classic-vm"
+      ]
+    },
+    "existingProtectableItems": {
+      "value": [
+        "vm;iaasvmcontainerv2;vsarmtempdemo;MyWindowsVM",
+        "vm;iaasvmcontainer;my-classic-vm;my-classic-vm"
+      ]
+    },
+    "existingBackupPolicyName": {
+      "value": "DevVault03BackupPolicy"
+    },
+    "existingSourceResourceIds": {
+      "value": [
+        "/subscriptions/98cc9ef7-8166-4c29-814a-db9f10851d97/resourceGroups/vsarmtempdemo/providers/Microsoft.Compute/virtualMachines/MyWindowsVM",
+        "/subscriptions/mySubscriptionId/resourceGroups/my-classic-vm/providers/Microsoft.ClassicCompute/virtualMachines/my-classic-vm"
+      ]
+    }
+  }
+}
